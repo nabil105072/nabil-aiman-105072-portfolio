@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammad Nabil Aiman (105072) | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Personal portfolio of Mohammad Nabil Aiman, a Network Computing student at UNIMAS.">
+<meta name="theme-color" content="#0b0f19">
+<title>Mohammad Nabil Aiman (105072) | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body data-theme="dark">
 
@@ -21,8 +23,8 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="nav-tools">
-            <button class="theme-btn" id="themeBtn">Light</button>
-            <button class="menu-toggle" id="menuBtn">Menu</button>
+            <button class="theme-btn" id="themeBtn" type="button">Light</button>
+            <button class="menu-toggle" id="menuBtn" type="button">Menu</button>
         </div>
     </header>
 
@@ -31,15 +33,15 @@
             <div class="hero-layout">
                 <div class="hero-text">
                     <h2 class="title-accent">
-                        <span style="color: #ef4444;">CODING</span> 
+                        <span class="text-red">CODING</span> 
                         <span class="animated-rocks">ROCKS</span>
                     </h2>
                     <h1 class="fade-name">MOHAMMAD NABIL AIMAN</h1>
                     <p class="greeting-text">
                         Greetings visitor!! I’m a Year 3 student from UNIMAS specializing in Network Computing, here to indulge curiosity of the digital world and fine-tuning his skills for network logic and design for further intricate applications
                     </p>
-                    <div class="action-btns" style="margin-top: 2rem;">
-                        <a href="#about" class="btn btn-main" style="background: #14b8a6; color: #000; padding: 12px 24px;">more about me</a>
+                    <div class="action-wrap">
+                        <a href="#about" class="btn btn-main">more about me</a>
                     </div>
                 </div>
                 <div class="profile-img-container">
@@ -49,11 +51,11 @@
         </section>
 
         <section id="about">
-            <h2 class="heading"><span>01.</span> About me</h2>
-            <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-weight: 500;">Get to know me!</p>
+            <h2 class="heading">About me</h2>
+            <p class="section-subtitle">Get to know me!</p>
             <div class="about-layout">
                 <div class="contact-card">
-                    <p style="color: var(--text-primary); line-height: 1.8;">
+                    <p class="about-body">
                         I’m Mohammad Nabil Aiman, a Year 3 student in UNIMAS currently pursuing Network Computing. Through my current studies, I navigate the communication between computers in ways of how digital managers and systems complement each other to maintain their functionality. I was able to notice in my studies of how different systems such as managers, databases and its design and logic codes impact the overall functionality of a system, not accounting for design and requirements to be accomplished. Playing around with intricate components in the system gave you better understanding in seeing how a system works.
                     </p>
                 </div>
@@ -61,135 +63,135 @@
         </section>
 
         <section id="skills">
-            <h2 class="heading"><span>02.</span> Skills</h2>
-            <p style="color: var(--text-secondary); margin-bottom: 2rem;">Technologies and tools I work with:</p>
-            <div class="card-grid" style="grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1.25rem;">
-                <div class="card" style="padding: 1.25rem; text-align: center; justify-content: center; align-items: center;">
-                    <span class="card-tag" style="background: rgba(59, 130, 246, 0.15); color: #60a5fa; font-size: 0.85rem; padding: 4px 12px; border-radius: 20px;">Networking</span>
-                    <h3 style="font-size: 1.1rem; margin-top: 0.75rem;">TCP/IP & Routing</h3>
+            <h2 class="heading">Skills</h2>
+            <p class="section-subtitle">This is what I allocate my work and skill points into to enforce my understanding</p>
+            <div class="card-grid skills-grid">
+                <div class="card skill-card">
+                    <span class="card-tag tag-networking">Networking</span>
+                    <h3>TCP/IP & Routing</h3>
                 </div>
-                <div class="card" style="padding: 1.25rem; text-align: center; justify-content: center; align-items: center;">
-                    <span class="card-tag" style="background: rgba(239, 68, 68, 0.15); color: #f87171; font-size: 0.85rem; padding: 4px 12px; border-radius: 20px;">OS</span>
-                    <h3 style="font-size: 1.1rem; margin-top: 0.75rem;">Linux & Bash</h3>
+                <div class="card skill-card">
+                    <span class="card-tag tag-os">OS</span>
+                    <h3>Linux & Bash</h3>
                 </div>
-                <div class="card" style="padding: 1.25rem; text-align: center; justify-content: center; align-items: center;">
-                    <span class="card-tag" style="background: rgba(20, 184, 166, 0.15); color: #2dd4bf; font-size: 0.85rem; padding: 4px 12px; border-radius: 20px;">Web</span>
-                    <h3 style="font-size: 1.1rem; margin-top: 0.75rem;">HTML5 & CSS3</h3>
+                <div class="card skill-card">
+                    <span class="card-tag tag-web">Web</span>
+                    <h3>HTML5 & CSS3</h3>
                 </div>
-                <div class="card" style="padding: 1.25rem; text-align: center; justify-content: center; align-items: center;">
-                    <span class="card-tag" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24; font-size: 0.85rem; padding: 4px 12px; border-radius: 20px;">Scripting</span>
-                    <h3 style="font-size: 1.1rem; margin-top: 0.75rem;">JavaScript</h3>
+                <div class="card skill-card">
+                    <span class="card-tag tag-scripting">Scripting</span>
+                    <h3>JavaScript</h3>
                 </div>
-                <div class="card" style="padding: 1.25rem; text-align: center; justify-content: center; align-items: center;">
-                    <span class="card-tag" style="background: rgba(168, 85, 247, 0.15); color: #c084fc; font-size: 0.85rem; padding: 4px 12px; border-radius: 20px;">Databases</span>
-                    <h3 style="font-size: 1.1rem; margin-top: 0.75rem;">Databases & SQL</h3>
+                <div class="card skill-card">
+                    <span class="card-tag tag-databases">Databases</span>
+                    <h3>Databases & SQL</h3>
                 </div>
             </div>
         </section>
 
         <section id="projects">
-            <h2 class="heading"><span>03.</span> MY <span style="color: #ec4899;">PROJECTS</span></h2>
-            <p style="color: var(--text-secondary); margin-bottom: 2rem;">Academic works I explored through previously</p>
+            <h2 class="heading">MY <span class="text-pink">PROJECTS</span></h2>
+            <p class="section-subtitle">Academic works I explored through previously</p>
             <div class="card-grid">
                 <div class="card">
                     <div>
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-                            <span class="card-tag" style="background: rgba(236, 72, 153, 0.15); color: #f472b6;">C++</span>
-                            <span style="font-family: var(--font-mono); color: var(--text-secondary); font-size: 0.9rem;">&lt;/&gt; ⚡</span>
+                        <div class="card-header-row">
+                            <span class="card-tag tag-cpp">C++</span>
+                            <span class="card-symbol">&lt;/&gt; </span>
                         </div>
                         <h3>Book Finder System</h3>
                         <p>System implemented for finding books. Used proper class relationships features and object oriented programming for more clean and easy troubleshooting.</p>
                     </div>
                     <div class="card-meta">
                         <span class="card-tech">C++ / OOP</span>
-                        <button class="card-btn" data-id="1">Details &rarr;</button>
+                        <button class="card-btn" data-id="1" type="button">Details &rarr;</button>
                     </div>
                 </div>
 
                 <div class="card">
                     <div>
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-                            <span class="card-tag" style="background: rgba(59, 130, 246, 0.15); color: #60a5fa;">SQL</span>
-                            <span style="font-family: var(--font-mono); color: var(--text-secondary); font-size: 0.9rem;">⚙️ 🗄️</span>
+                        <div class="card-header-row">
+                            <span class="card-tag tag-sql">SQL</span>
+                            <span class="card-symbol"></span>
                         </div>
                         <h3>Restaurant Order Management System</h3>
                         <p>Database design for collecting and managing orders from customer, with entity relationship usage for communicating between order number, quantity, and table number.</p>
                     </div>
                     <div class="card-meta">
                         <span class="card-tech">SQL / ERD</span>
-                        <button class="card-btn" data-id="2">Details &rarr;</button>
+                        <button class="card-btn" data-id="2" type="button">Details &rarr;</button>
                     </div>
                 </div>
 
                 <div class="card">
                     <div>
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-                            <span class="card-tag" style="background: rgba(34, 197, 94, 0.15); color: #4ade80;">PYTHON</span>
-                            <span style="font-family: var(--font-mono); color: var(--text-secondary); font-size: 0.9rem;">🐍 🌐</span>
+                        <div class="card-header-row">
+                            <span class="card-tag tag-python">PYTHON</span>
+                            <span class="card-symbol"></span>
                         </div>
                         <h3>Smart Home Application</h3>
                         <p>Assignment requiring research about personalization and preferences of user, used to create a customizable smart home app catering to needs by most users using python.</p>
                     </div>
                     <div class="card-meta">
                         <span class="card-tech">Python / UI</span>
-                        <button class="card-btn" data-id="3">Details &rarr;</button>
+                        <button class="card-btn" data-id="3" type="button">Details &rarr;</button>
                     </div>
                 </div>
 
                 <div class="card">
                     <div>
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-                            <span class="card-tag" style="background: rgba(59, 130, 246, 0.15); color: #60a5fa;">C++</span>
-                            <span style="font-family: var(--font-mono); color: var(--text-secondary); font-size: 0.9rem;">📡 🌐</span>
+                        <div class="card-header-row">
+                            <span class="card-tag tag-cpp">C++</span>
+                            <span class="card-symbol"></span>
                         </div>
                         <h3>Packet Analyzer & Subnet Calculator</h3>
                         <p>A network utility designed to parse IP addresses, calculate variable-length subnet masks (VLSM), and analyze packet headers to assist in network troubleshooting.</p>
                     </div>
                     <div class="card-meta">
                         <span class="card-tech">C++ / TCP/IP</span>
-                        <button class="card-btn" data-id="4">Details &rarr;</button>
+                        <button class="card-btn" data-id="4" type="button">Details &rarr;</button>
                     </div>
                 </div>
 
                 <div class="card">
                     <div>
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-                            <span class="card-tag" style="background: rgba(239, 68, 68, 0.15); color: #f87171;">C</span>
-                            <span style="font-family: var(--font-mono); color: var(--text-secondary); font-size: 0.9rem;">💻 ⚡</span>
+                        <div class="card-header-row">
+                            <span class="card-tag tag-c">C</span>
+                            <span class="card-symbol"></span>
                         </div>
                         <h3>Process Memory Allocator Simulator</h3>
                         <p>Operating systems lab simulation modeling dynamic memory allocation algorithms (First-Fit, Best-Fit) to analyze memory fragmentation and process execution.</p>
                     </div>
                     <div class="card-meta">
                         <span class="card-tech">C / OS Logic</span>
-                        <button class="card-btn" data-id="5">Details &rarr;</button>
+                        <button class="card-btn" data-id="5" type="button">Details &rarr;</button>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="contact">
-            <h2 class="heading"><span>04.</span> Contact</h2>
+            <h2 class="heading">Contact</h2>
             <div class="contact-layout">
                 <div class="contact-card">
-                    <h3 style="margin-bottom: 0.75rem;">Reach Out to Me!!</h3>
-                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.6;">
+                    <h3>Reach Out to Me!!</h3>
+                    <p class="contact-lead">
                         For any interests in personal idea sharing, content creation or connecting. I’m always looking forward to it
                     </p>
                     <div class="info-row">
                         <small>Student Identifier</small>
                         <strong>105072</strong>
                     </div>
-                    <div class="info-row" style="margin-top: 1rem;">
+                    <div class="info-row info-row-spaced">
                         <small>Student Email</small>
-                        <strong style="color: var(--accent);">105072@siswa.unimas.my</strong>
+                        <strong class="text-accent">105072@siswa.unimas.my</strong>
                     </div>
-                    <div style="margin-top: 1.5rem; font-style: italic; color: var(--text-secondary); font-size: 0.9rem;">
+                    <div class="contact-footer-note">
                         Thank you for your attention :]
                     </div>
                 </div>
 
-                <form class="contact-card" id="messageForm" novalidate>
+                <form class="contact-card contact-form-box" id="messageForm" novalidate>
                     <div class="field-wrap">
                         <label for="usrName">Name</label>
                         <input type="text" id="usrName" placeholder="Your name">
@@ -205,7 +207,7 @@
                         <textarea id="usrMsg" rows="4" placeholder="Type your message..."></textarea>
                         <div class="err-text" id="msgErr">Message is required.</div>
                     </div>
-                    <button type="submit" class="btn btn-main" style="width: 100%;">Send Message</button>
+                    <button type="submit" class="btn btn-main btn-full">Send Message</button>
                 </form>
             </div>
         </section>
@@ -213,10 +215,10 @@
 
     <div class="modal-bg" id="infoModal">
         <div class="modal-box">
-            <button class="modal-close" id="modalX">&times;</button>
-            <h3 id="popTitle" style="margin-bottom: 0.5rem;">Project Detail</h3>
-            <p id="popBody" style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;"></p>
-            <button class="btn btn-sub" id="modalOk">Close</button>
+            <button class="modal-close" id="modalX" type="button">&times;</button>
+            <h3 id="popTitle">Project Detail</h3>
+            <p id="popBody"></p>
+            <button class="btn btn-sub" id="modalOk" type="button">Close</button>
         </div>
     </div>
 
