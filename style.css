@@ -167,6 +167,10 @@ section {
     letter-spacing: 1px;
 }
 
+.text-red { color: #ef4444; }
+.text-pink { color: #ec4899; }
+.text-accent { color: var(--accent); }
+
 .animated-rocks {
     color: #3b82f6;
     display: inline-block;
@@ -197,9 +201,8 @@ section {
     line-height: 1.7;
 }
 
-.action-btns {
-    display: flex;
-    gap: 1rem;
+.action-wrap {
+    margin-top: 2rem;
 }
 
 .btn {
@@ -214,8 +217,9 @@ section {
 }
 
 .btn-main {
-    background: var(--accent);
+    background: #14b8a6;
     color: #000;
+    padding: 12px 24px;
 }
 
 .btn-sub {
@@ -229,18 +233,19 @@ section {
     color: var(--accent);
 }
 
-.heading {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+.btn-full {
+    width: 100%;
 }
 
-.heading span {
-    color: var(--accent);
-    font-family: var(--font-mono);
-    font-size: 1.1rem;
+.heading {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-weight: 500;
 }
 
 .about-layout {
@@ -249,10 +254,20 @@ section {
     gap: 2.5rem;
 }
 
+.about-body {
+    color: var(--text-primary);
+    line-height: 1.8;
+}
+
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     gap: 1.5rem;
+}
+
+.skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.25rem;
 }
 
 .card {
@@ -271,26 +286,59 @@ section {
     border-color: var(--accent);
 }
 
+.skill-card {
+    padding: 1.25rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .card-tag {
     font-size: 0.75rem;
     font-family: var(--font-mono);
-    color: var(--accent);
-    background: var(--accent-glow);
     padding: 2px 8px;
     border-radius: 4px;
     display: inline-block;
     margin-bottom: 0.75rem;
 }
 
+.tag-networking { background: rgba(59, 130, 246, 0.15); color: #60a5fa; font-size: 0.85rem; padding: 4px 12px; border-radius: 20px; }
+.tag-os { background: rgba(239, 68, 68, 0.15); color: #f87171; font-size: 0.85rem; padding: 4px 12px; border-radius: 20px; }
+.tag-web { background: rgba(20, 184, 166, 0.15); color: #2dd4bf; font-size: 0.85rem; padding: 4px 12px; border-radius: 20px; }
+.tag-scripting { background: rgba(245, 158, 11, 0.15); color: #fbbf24; font-size: 0.85rem; padding: 4px 12px; border-radius: 20px; }
+.tag-databases { background: rgba(168, 85, 247, 0.15); color: #c084fc; font-size: 0.85rem; padding: 4px 12px; border-radius: 20px; }
+
+.tag-cpp { background: rgba(236, 72, 153, 0.15); color: #f472b6; }
+.tag-sql { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+.tag-python { background: rgba(34, 197, 94, 0.15); color: #4ade80; }
+.tag-c { background: rgba(239, 68, 68, 0.15); color: #f87171; }
+
 .card h3 {
     font-size: 1.15rem;
     margin-bottom: 0.5rem;
+}
+
+.skill-card h3 {
+    margin-top: 0.75rem;
 }
 
 .card p {
     color: var(--text-secondary);
     font-size: 0.9rem;
     margin-bottom: 1.25rem;
+}
+
+.card-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.card-symbol {
+    font-family: var(--font-mono);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
 }
 
 .card-meta {
@@ -333,14 +381,31 @@ section {
     padding: 1.5rem;
 }
 
+.contact-lead {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
 .info-row {
     margin-bottom: 1rem;
+}
+
+.info-row-spaced {
+    margin-top: 1rem;
 }
 
 .info-row small {
     color: var(--text-secondary);
     display: block;
     font-size: 0.8rem;
+}
+
+.contact-footer-note {
+    margin-top: 1.5rem;
+    font-style: italic;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
 }
 
 .field-wrap {
@@ -406,6 +471,16 @@ section {
     max-width: 500px;
     padding: 1.5rem;
     position: relative;
+}
+
+.modal-box h3 {
+    margin-bottom: 0.5rem;
+}
+
+.modal-box p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
 }
 
 .modal-close {
